@@ -21,7 +21,7 @@ def tickerFinder(string):
 
     possible_stocks = []
     for i in string:
-        if len(i) > 0 and i[0] == '$' and len(i) > 2 and len(i) < 6:
+        if len(i) > 0 and i[0] == '$' and len(i) < 6:
             possible_stocks.append(i)
 
     # List comprehension that makes a list from possible_stocks that
