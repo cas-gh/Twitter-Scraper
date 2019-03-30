@@ -11,7 +11,7 @@ def twitterSearch():
     # gets 100 (the max) english tweets that contain the given term
     # and returns them in a .json form.
     # Slices the .json to grab just the text from the tweet body.
-    search = api.GetSearch(term="stocks", count=100, lang="en", return_json=True)
+    search = api.GetSearch(term="searchTerm", count=100, lang="en", return_json=True)
     search_words = search['statuses'][0]['text'].split(' ')
 
     return search_words
